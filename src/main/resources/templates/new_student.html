@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>New Student</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
     <h1>Create a New Student</h1>
@@ -14,17 +14,28 @@
         <table>
             <tr>
                 <td>First Name:</td>
-                <td><!-- first_name text field --></td>
+                <td><input type="text" name="firstName"/></td>
             </tr>
             <tr>
                 <td>Last Name:</td>
-                <td><!-- last_name text field --></td>
+                <td><input type="text" name="lastName"/></td>
             </tr>
             <tr>
                 <td>Grade:</td>
                 <td>
                     <select name="grade">
-                        <!-- thymeleaf option tag -->
+                        <option value="First">First</option>
+                        <option value="Second">Second</option>
+                        <option value="Third">Third</option>
+                        <option value="Fourth">Fourth</option>
+                        <option value="Fifth">Fifth</option>
+                        <option value="Sixth">Sixth</option>
+                        <option value="Seventh">Seventh</option>
+                        <option value="Eighth">Eighth</option>
+                        <option value="Ninth">Ninth</option>
+                        <option value="Tenth">Tenth</option>
+                        <option value="Eleventh">Eleventh</option>
+                        <option value="Twelfth">Twelfth</option>
                     </select>
                 </td>
             </tr>

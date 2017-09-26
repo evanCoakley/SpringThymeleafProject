@@ -10,7 +10,8 @@ public class StudentController {
 
     @RequestMapping("/new_student")
     public String newStudent(Model model) {
-        model.addAttribute("grades", /* call the method on the Grade enum to get all the grades */);
+        System.out.println(Grade.values());
+        model.addAttribute("grades", Grade.values());
         return "new_student";
     }
 
@@ -21,8 +22,14 @@ public class StudentController {
         Student student = new Student();
 
         /* set student firstName, lastName and grade using the http request parameters */
+            student.setFirstName(firstName);
+            student.setLastName(lastName);
+            student.setGrade(grade);
+
+
 
         /* add the student to the model that will be used by the view_student html file */
+        model.addAttribute("Student", student);
 
         return "view_student";
     }

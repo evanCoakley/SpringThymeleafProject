@@ -32,15 +32,15 @@ public class StudentController {
         Student student = new Student();
 
         /* set student firstName, lastName and grade using the http request parameters */
-            student.setFirstName(firstName);
-            student.setLastName(lastName);
-            student.setGrade(grade);
-            this.student = student;
+        student.setFirstName(firstName);
+        student.setLastName(lastName);
+        student.setGrade(grade);
+        this.student = student;
 
 
 
         /* add the student to the model that will be used by the view_student html file */
-        model.addAttribute("Student", student);
+//        model.addAttribute("/view_student", student);
 
         return "redirect:/view_student.html";
     }
